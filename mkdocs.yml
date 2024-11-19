@@ -64,6 +64,7 @@ theme:
     - search.share
 
 extra:
+  generator: false
   homepage: https://vinodreddytoorpu.github.io/semiconductor-hub/
   # cookies
   consent:
