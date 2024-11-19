@@ -92,7 +92,7 @@ copyright: >
 plugins:
   # - rss
   - blog
-  - table-reader
+  # - table-reader
   - search:
       # cache: true
       enabled: true

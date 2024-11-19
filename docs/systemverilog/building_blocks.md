@@ -317,16 +317,16 @@ Both the time units and time precision are represented using one of the characte
 
 #### Time unit strings
 
-<!-- | Character string | Unit of measurement |
+| Character string | Unit of measurement |
 | :--------------: | :-----------------: |
 | s                | seconds             |            
 | ms               | milliseconds        |                 
 | us               | microseconds        |                 
 | ns               | nanoseconds         |                
 | ps               | picoseconds         |                
-| fs               | femtoseconds        |                   -->
+| fs               | femtoseconds        |                  
  
-{{ read_csv('tables\sv_time_unit_strings.csv') }}
+<!-- {{ read_csv('tables\sv_time_unit_strings.csv') }} -->
 
 !!! warning
      The time precision of a design element shall be at least as precise as the time unit; it cannot be a longer unit of time than the time unit.
