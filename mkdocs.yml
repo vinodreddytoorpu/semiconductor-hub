@@ -57,6 +57,11 @@ theme:
     - navigation.path
     - navigation.prune
     - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
 
 extra:
   homepage: https://vinodreddytoorpu.github.io/semiconductor-hub/
@@ -86,6 +91,8 @@ copyright: >
 
 plugins:
   # - rss
+  - blog
+  - table-reader
   - search:
       # cache: true
       enabled: true
@@ -161,6 +168,7 @@ nav:
 
   - SystemVerilog: 
     - SystemVerilog: systemverilog/index.md
+    - SV Building Box: systemverilog/building_blocks.md
 
   - Universal Verification Methodology (UVM): uvm.md
   
