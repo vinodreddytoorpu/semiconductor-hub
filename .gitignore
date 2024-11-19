@@ -1,1 +1,3 @@
 site
+.cache
+docs/hooks/__pycache__/socialmedia.cpython-313.pyc

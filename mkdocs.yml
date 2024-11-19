@@ -1,1 +1,171 @@
-site_name: My Docs
+site_name: Semiconductor Hub
+site_url: https://vinodreddytoorpu.github.io/semiconductor-hub/
+
+theme:
+  language: en
+  direction: ltr
+  name: material
+  logo: assets/logo/network.png
+  favicon: assets/logo/network.png
+  font:
+    text: Source Code Pro
+    code: Red Hat Mono
+  icon:
+    annotation: material/arrow-right-circle
+  palette:
+    # Automatic Mode
+    - media: "(prefers-color-scheme)"
+      scheme: default
+      toggle:
+        icon: material/brightness-auto
+        name: Automatic Mode
+      primary: purple
+      accent: deep purple
+    # Light Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Light Mode
+      primary: purple
+      accent: deep purple
+    # Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Dark Mode
+      primary: purple
+      accent: deep purple
+  features:
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.tabs.link
+    - content.footnote.tooltips
+    # Improved tooltips
+    - content.tooltips
+    # navigation
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+
+extra:
+  homepage: https://vinodreddytoorpu.github.io/semiconductor-hub/
+  # cookies
+  consent:
+    actions:
+      - accept
+      - reject
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  social:
+    - icon: simple/linkedin
+      name: Vinod Reddy on LinkedIn
+      link: https://linkedin.com/in/toorpu-vinod-kumar-reddy
+
+    - icon: /fontawesome/regular/envelope
+      name: Send me an email
+      link: mailto:<vinodreddy9739@gmail.com>
+
+copyright: >
+  Copyright &copy; 2024 - 2025 Vinod Reddy –
+  <a href="#__consent">Change cookie settings</a>
+
+plugins:
+  # - rss
+  - search:
+      # cache: true
+      enabled: true
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      pipeline:
+        - stemmer
+        - stopWordFilter
+        - trimmer
+  - tags:
+      enabled: true
+      tags: true
+  # Images
+  - glightbox
+
+markdown_extensions:
+  - toc:
+      permalink: ⚓︎
+      title: On this page
+  - footnotes
+  - tables
+  - admonition
+  - pymdownx.details
+  # Code blocks
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  # Diagrams
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  # Formatting
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  # Grids
+  - attr_list
+  - md_in_html
+  # Icons, Emojis
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # Images
+  - pymdownx.blocks.caption
+  # Lists
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  # MathJax
+  - pymdownx.arithmatex:
+      generic: true
+  # Tooltips
+  - abbr
+  # glossary
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  # sharing
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: index.md
+
+  - SystemVerilog: 
+    - SystemVerilog: systemverilog/index.md
+
+  - Universal Verification Methodology (UVM): uvm.md
+  
+  - About: about.md
+
+# sharing resources
+hooks:
+  - docs/hooks/socialmedia.py
