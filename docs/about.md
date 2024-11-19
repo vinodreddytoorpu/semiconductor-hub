@@ -7,7 +7,7 @@ hide:
 
 <!-- ![Vinod Reddy, Verification Engineer, semiconductor design verification domain](#) -->
 
-Hi, I'm **Vinod Reddy**, a passionate **Verification Engineer** with over 3 years of experience in the **semiconductor design verification domain**. Holding a **B.Tech in Electronics and Communication Engineering** from Gokaraju Rangaraju Institute of Engineering and Technology (GRIET), and a Diploma in ECE from GOVT. Polytechnic College, I've built a strong foundation in electronics and verification methodologies.
+Hi, I'm **Vinod Reddy**, a passionate **Verification Engineer** in the **semiconductor design verification domain**. Holding a **B.Tech in Electronics and Communication Engineering** from Gokaraju Rangaraju Institute of Engineering and Technology (GRIET), and a Diploma in ECE from GOVT. Polytechnic College, I've built a strong foundation in electronics and verification methodologies.
 
 ### My Journey
 Over the past few years, I've honed my skills in **System Verilog (SV)** and **Universal Verification Methodology (UVM)**, working extensively with protocols like **AMBA (APB & AXI)**. My career has afforded me the opportunity to engage in various complex projects at Intel, where I've contributed to **IP, SoC, RTL, GLS & UPF Verification** and more.
