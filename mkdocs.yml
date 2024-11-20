@@ -170,6 +170,7 @@ nav:
   - SystemVerilog: 
     - SystemVerilog: systemverilog/index.md
     - SV Building Box: systemverilog/building_blocks.md
+    - SV Lexical conventions: systemverilog/lexical_conventions.md
 
   - Universal Verification Methodology (UVM): uvm.md
   
